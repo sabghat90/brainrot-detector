@@ -1,0 +1,16 @@
+{
+  "_comment": "Target categories (tiers) to alert on. Only the category line is matched against this list.",
+
+  "prestige": [
+    "Prestige",
+    "Shining",
+    "Shinning",
+    "Crystal"
+  ],
+
+  "known_non_prestige_tiers": [
+    "Six-Seven",
+    "Elite",
+    "Nebula"
+  ]
+}

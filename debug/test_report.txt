@@ -1,0 +1,53 @@
+Brainrot Prestige Reader - Test Report
+==================================================
+
+--- video2.mov ---
+Resolution: 2796x1290  FPS: 59.93  Duration: 17.41s  Total frames: 1043
+Processing speed: 9.6 fps (wall time 108.41s)
+Frames sampled for detection: 1043
+Frames with a candidate label region found: 174
+OCR attempts: 87
+OCR successes (non-empty text): 86
+OCR success rate: 98.9%
+Classification events: 86
+OCR latency: avg 767ms, min 236ms, max 2074ms
+Prestige alarms triggered (temporally confirmed): 0
+Single-frame Prestige-positive reads: 6
+Temporally-confirmed Prestige detections: 0
+Prestige reads (frame, t, name, tier):
+  frame=396 t=6.61s name='Ballerina Cappuccina' tier='SiX-SBVEN'
+  frame=420 t=7.01s name='llerina Cappuccina' tier='| Six-Seven'
+  frame=432 t=7.21s name='Ballerina Cappu' tier='SiX-SeVEl'
+  frame=996 t=16.62s name='La Vacca Saturno Saturnita' tier='Six-Seven'
+  frame=1020 t=17.02s name='La Vacca Saturno Saturnita' tier='Six-Seven'
+  frame=1032 t=17.22s name='"a Saturna Saturnita' tier='Six-Seven'
+Distinct name strings OCR'd (raw, unique): 43
+
+--- new-video.MP4 ---
+Resolution: 2796x1290  FPS: 59.83  Duration: 47.18s  Total frames: 2823
+Processing speed: 6.0 fps (wall time 472.31s)
+Frames sampled for detection: 2823
+Frames with a candidate label region found: 466
+OCR attempts: 234
+OCR successes (non-empty text): 234
+OCR success rate: 100.0%
+Classification events: 234
+OCR latency: avg 1239ms, min 206ms, max 5359ms
+Prestige alarms triggered (temporally confirmed): 0
+Single-frame Prestige-positive reads: 8
+Temporally-confirmed Prestige detections: 0
+Prestige reads (frame, t, name, tier):
+  frame=168 t=2.81s name='Goosini Planini' tier='Six-Seven'
+  frame=180 t=3.01s name='Goosini Planini' tier='Six-Seven'
+  frame=204 t=3.41s name='Goosini Planini' tier='Six-Seven'
+  frame=216 t=3.61s name='Goosint Planini' tier='Six-Seven'
+  frame=1968 t=32.89s name='Whalino Helmetino' tier='Six-Seven'
+  frame=1992 t=33.29s name='alino Helmeting' tier='Six-Seven'
+  frame=2004 t=33.49s name='Whalino Helmetino' tier='Six-Seven'
+  frame=2016 t=33.69s name='Whalino Helme' tier='Six-Sever'
+Distinct name strings OCR'd (raw, unique): 174
+
+==================================================
+TOTAL Prestige alarms across all recordings: 0
+
+Note: both supplied recordings contain confirmed real Prestige ('Six-Seven') Brainrots, so this validates the full pipeline end-to-end on real footage, not a synthetic frame.
